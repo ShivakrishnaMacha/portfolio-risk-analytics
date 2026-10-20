@@ -312,8 +312,8 @@ wdf = pd.DataFrame({"ticker": data["log_wide"].columns,
                     "max_sharpe_%": ms * 100,
                     "min_variance_%": mv * 100})
 wdf = wdf.sort_values("max_sharpe_%", ascending=False)
-st.dataframe(wdf.style.format("{:.1f}"), use_container_width=True,
-             height=320)
+st.dataframe(wdf.style.format("{:.1f}", subset=["max_sharpe_%", "min_variance_%"]),
+             use_container_width=True, height=320)
 st.caption(f"Equal-weight benchmark Sharpe: {bench_sharpe:.2f} · "
            f"max-Sharpe portfolio Sharpe: {fr.sharpes.max():.2f} · "
            "weights sum to 1 by construction.")
