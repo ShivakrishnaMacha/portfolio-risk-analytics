@@ -17,7 +17,7 @@ factor exposures, and a Monte Carlo efficient frontier.
 
 ## Live demo
 
-🚀 **Live demo:** https://portfolio-risk-analytics.streamlit.app/
+🚀 **Live demo:** https://portfolio-risk-lab.streamlit.app/
 
 ## Features
 
