@@ -271,7 +271,7 @@ with cf1:
 with cf2:
     betas = factor_exposures(port_log, factors)
     bdf = pd.DataFrame({"factor": list(betas.keys()),
-                        "exposure": list(betas.values)})
+                        "exposure": list(betas.values())})
     bars = px.bar(bdf, x="factor", y="exposure", height=380,
                   title="Portfolio factor exposures (OLS betas)",
                   color="exposure", color_continuous_scale="RdBu")
